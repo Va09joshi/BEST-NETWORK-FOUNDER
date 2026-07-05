@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import QuickStats from '../../features/dashboard/components/QuickStats';
@@ -13,7 +13,7 @@ const TowerMap = dynamic(() => import('../../features/dashboard/components/Tower
   loading: () => <div style={{ height: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--color-stone-canvas)', borderRadius: '16px' }}>Loading Map...</div>
 });
 
-export default function DashboardPage() {
+function DashboardContent() {
   const searchParams = useSearchParams();
   const locationId = searchParams.get('location_id');
 
@@ -100,5 +100,13 @@ export default function DashboardPage() {
           )}
         </div>
     </main>
+  );
+}
+
+export default function DashboardPage() {
+  return (
+    <Suspense fallback={<div style={{ padding: '100px', textAlign: 'center' }}>Loading dashboard...</div>}>
+      <DashboardContent />
+    </Suspense>
   );
 }
