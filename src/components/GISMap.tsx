@@ -215,7 +215,7 @@ export default function GISMap({ layerType }: GISMapProps) {
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url={layerType === 'dead_zones' || layerType === 'crowdsourced' 
+          url={layerType === 'dead_zones' || (layerType as string) === 'crowdsourced' 
             ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" // Dark mode for heatmaps
             : "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"}
         />
@@ -225,7 +225,7 @@ export default function GISMap({ layerType }: GISMapProps) {
         {/* Render specific overlay layers based on active tab */}
         {layerType === 'dead_zones' && renderDeadZones()}
         {layerType === 'smart_tower' && renderSmartTowers()}
-        {layerType === 'roads' && renderRoads()}
+        {(layerType as string) === 'roads' && renderRoads()}
         {layerType === 'emergency' && renderEmergency()}
         {layerType === 'villages' && renderVillages()}
         {layerType === 'live_heatmap' && renderLiveHeatmap()}
