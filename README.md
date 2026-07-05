@@ -5,6 +5,11 @@
     <strong>Real-time geospatial intelligence to find the best mobile network in your area.</strong>
     <br />
     <br />
+    <img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js" alt="Next.js" />
+    <img src="https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+    <br />
+    <br />
     <a href="https://best-net.vercel.app"><strong>View Live Demo »</strong></a>
     <br />
     <br />
@@ -23,6 +28,7 @@
       </ul>
     </li>
     <li><a href="#built-with">Built With</a></li>
+    <li><a href="#project-structure">Project Structure</a></li>
     <li><a href="#data-architecture">Data Architecture</a></li>
     <li>
       <a href="#screenshots">Screenshots</a>
@@ -72,6 +78,26 @@ Think of it as **Speedtest.net**, but highly localized, visually immersive, and 
 * [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 * [Leaflet.js](https://leafletjs.com/) - Interactive Maps
 * [Lucide Icons](https://lucide.dev/) - Clean and consistent iconography
+
+---
+
+## Project Structure
+
+A quick overview of the modular codebase layout:
+
+```text
+BEST-NETWORK-FOUNDER/
+├── public/                 # Static assets, fonts, and icons
+├── src/
+│   ├── app/                # Next.js App Router endpoints and layouts
+│   ├── components/         # Reusable global UI components (Hero, Sidebar)
+│   ├── context/            # React Context providers (Location Context)
+│   ├── features/           # Domain-specific logic and isolated modules
+│   └── lib/                # Utility functions and API integrations
+├── tailwind.config.ts      # Tailwind CSS configuration and themes
+├── next.config.ts          # Next.js build and routing settings
+└── package.json            # Project dependencies and scripts
+```
 
 ---
 
