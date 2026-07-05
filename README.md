@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/favicon.ico" alt="Logo" width="80" height="80">
+  <img src="./public/image copy 2.png" alt="Best-NET Logo" width="200">
   <h3 align="center">Best SIM Network Analyzer</h3>
   <p align="center">
     <strong>Real-time geospatial intelligence to find the best mobile network in your area.</strong>
@@ -15,8 +15,7 @@
 
 ## 🌟 About The Project
 
-![Dashboard Screenshot](https://placehold.co/1200x600/f8fafc/0f172a?text=Dashboard+Screenshot&font=raleway)
-*(Please replace the above placeholder with a real screenshot of the application at `/public/docs/dashboard.png`)*
+![Dashboard Screenshot](./public/image.png)
 
 Finding the right mobile network shouldn't rely on biased marketing or overly complex technical tools. **Best SIM** is a minimalistic, beautifully designed web application that helps you discover the most reliable mobile operator in your specific city, town, or village. 
 
@@ -45,12 +44,12 @@ Think of it as **Speedtest.net**, but highly localized, visually immersive, and 
 ## 📸 Screenshots
 
 ### Map Interface
-![Map Overlay](https://placehold.co/1200x600/f8fafc/0f172a?text=GIS+Map+Interface)
+![Map Overlay](./public/image.png)
 *The interactive GIS Pro dashboard showing tower heatmaps.*
 
-### Side-by-Side Comparison
-![Comparison](https://placehold.co/1200x600/f8fafc/0f172a?text=Network+Comparison+Cards)
-*Detailed breakdown of operator reliability and 5G availability.*
+### Recommendation Insights
+![Comparison](./public/image%20copy.png)
+*Detailed breakdown of operator reliability and scores.*
 
 ---
 
