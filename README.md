@@ -23,6 +23,7 @@
       </ul>
     </li>
     <li><a href="#built-with">Built With</a></li>
+    <li><a href="#data-architecture">Data Architecture</a></li>
     <li>
       <a href="#screenshots">Screenshots</a>
       <ul>
@@ -71,6 +72,38 @@ Think of it as **Speedtest.net**, but highly localized, visually immersive, and 
 * [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 * [Leaflet.js](https://leafletjs.com/) - Interactive Maps
 * [Lucide Icons](https://lucide.dev/) - Clean and consistent iconography
+
+---
+
+## Data Architecture
+
+Best SIM relies on a robust API to feed real-time analytics to the frontend map engine. Here is a sample of the network intelligence payload the system processes to generate the AI recommendation score:
+
+```json
+{
+  "location": {
+    "city": "Dewas",
+    "coordinates": [22.9676, 76.0534],
+    "radius_km": 10
+  },
+  "telemetry": {
+    "total_towers": 39,
+    "active_users_sampled": 14205,
+    "last_updated": "2026-07-05T10:00:00Z"
+  },
+  "operators": [
+    {
+      "name": "Jio",
+      "network_type": "True 5G",
+      "metrics": {
+        "download_mbps": 143.2,
+        "ping_ms": 15,
+        "reliability_score": 7.8
+      }
+    }
+  ]
+}
+```
 
 ---
 
