@@ -52,10 +52,11 @@ Think of it as **Speedtest.net**, but highly localized, visually immersive, and 
 *The interactive GIS Pro dashboard showing tower heatmaps and signal analysis.*
 
 ### Recommendation Insights
-<div align="center">
-  <img src="./public/comparison-final.png" alt="Comparison" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 12px;">
+<div align="center" style="display: flex; flex-direction: column; gap: 16px; align-items: center;">
+  <img src="./public/comparison-final.png" alt="Recommendation AI Modal" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <img src="./public/comparison-screenshot.png" alt="Village Connectivity Map" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 12px;">
 </div>
-*Detailed breakdown of operator reliability, coverage, and community scores.*
+*Detailed breakdown of operator reliability, rural connectivity mapping, and community scores.*
 
 ---
 
