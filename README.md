@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/logo.png" alt="Best-NET Logo" width="200">
+  <img src="./public/logo-final.png" alt="Best-NET Logo" width="200">
   <h3 align="center">Best SIM Network Analyzer</h3>
   <p align="center">
     <strong>Real-time geospatial intelligence to find the best mobile network in your area.</strong>
@@ -48,7 +48,7 @@ Think of it as **Speedtest.net**, but highly localized, visually immersive, and 
 *The interactive GIS Pro dashboard showing tower heatmaps.*
 
 ### Recommendation Insights
-![Comparison](./public/comparison-screenshot.png)
+![Comparison](./public/comparison-final.png)
 *Detailed breakdown of operator reliability and scores.*
 
 ---
