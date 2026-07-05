@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Best SIM | Find the Best Mobile Network",
-  description: "Compare Jio, Airtel, Vi and BSNL using real performance, nearby towers and community reports.",
+  description: "Stop guessing which mobile network is best. Use Best SIM's interactive GIS maps and real-time performance data to find the most reliable operator in your specific area.",
 };
 
 import { Outfit } from "next/font/google";
