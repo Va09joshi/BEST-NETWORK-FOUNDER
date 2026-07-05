@@ -13,37 +13,37 @@
 
 ---
 
-## 🌟 About The Project
+## About The Project
 
 <div align="center">
   <img src="./public/dashboard-screenshot.png" alt="Dashboard Screenshot" width="800" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); margin-bottom: 24px;">
 </div>
 
-Finding the right mobile network shouldn't rely on biased marketing or overly complex technical tools. **Best SIM** is a minimalistic, beautifully designed web application that helps you discover the most reliable mobile operator in your specific city, town, or village. 
+Finding the right mobile network should not rely on biased marketing campaigns or overly complex technical tools. **Best SIM** is a minimalistic, beautifully designed web application that helps you discover the most reliable mobile operator in your specific city, town, or village. 
 
-Think of it as **Speedtest.net**, but highly localized, visually immersive, and actionable.
+Think of it as **Speedtest.net**, but highly localized, visually immersive, and actionable. We aggregate thousands of data points, including tower proximity, historical signal strength, and community reports, to give you a definitive recommendation before you purchase your next SIM card.
 
-### ✨ Key Features
+### Key Features
 
-* 📍 **Geospatial Intelligence:** Search any location in India to instantly retrieve network performance metrics.
-* 📊 **Deep Dive Analytics:** Compare Jio, Airtel, Vi, and BSNL side-by-side using real performance data.
-* 🗺️ **GIS Pro Map:** Interactive map overlays visualizing tower density, 5G readiness, and signal dead zones.
-* 📱 **Fully Responsive:** Beautifully crafted UI that works seamlessly across desktops, tablets, and smartphones.
-* ⚡ **Performance First:** Built with Next.js App Router for maximum speed, SEO, and SSR capabilities.
+* **Geospatial Intelligence:** Search any location in India to instantly retrieve network performance metrics. The platform leverages OpenStreetMap routing and forward/reverse geocoding to pinpoint precise coordinates.
+* **Deep Dive Analytics:** Compare Jio, Airtel, Vi, and BSNL side-by-side using real performance data. We analyze average download speeds, network uptime, ping, and indoor coverage probabilities.
+* **GIS Pro Map:** Interactive map overlays visualizing tower density, 5G readiness, and signal dead zones. Built on Leaflet, the map engine renders dynamic heatmaps based on real physical infrastructure data.
+* **Fully Responsive:** Beautifully crafted UI that works seamlessly across desktops, tablets, and smartphones, featuring slide-in drawers and adaptive grid layouts.
+* **Performance First:** Built with Next.js App Router for maximum speed, SEO, and SSR capabilities. Components are dynamically imported to minimize initial bundle sizes.
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 * [Next.js 16](https://nextjs.org/) - React Framework
 * [React 19](https://react.dev/) - UI Library
 * [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 * [Leaflet.js](https://leafletjs.com/) - Interactive Maps
-* [Lucide Icons](https://lucide.dev/) - Beautiful iconography
+* [Lucide Icons](https://lucide.dev/) - Clean and consistent iconography
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Map Interface
 <div align="center">
@@ -60,7 +60,7 @@ Think of it as **Speedtest.net**, but highly localized, visually immersive, and 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To get a local copy up and running, follow these simple steps.
 
@@ -71,7 +71,7 @@ To get a local copy up and running, follow these simple steps.
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repository
    ```bash
    git clone https://github.com/Va09joshi/BEST-NETWORK-FOUNDER.git
    ```
@@ -91,7 +91,7 @@ To get a local copy up and running, follow these simple steps.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -103,12 +103,12 @@ Contributions are what make the open source community such an amazing place to l
 
 ---
 
-## 📜 License
+## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ---
 
 <div align="center">
-  <p>Built with ❤️ by the Best SIM Team</p>
+  <p>Built with quality by the Best SIM Team</p>
 </div>
