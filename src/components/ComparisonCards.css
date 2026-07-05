@@ -1,0 +1,50 @@
+/* ComparisonCards.css */
+
+.sim-card-wrapper {
+  /* Light, minimalist drop shadow */
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.05));
+  transition: filter 0.2s ease, transform 0.2s ease;
+  height: 100%;
+}
+
+.sim-card-wrapper:hover {
+  filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.1));
+  transform: translateY(-4px);
+}
+
+.sim-card {
+  position: relative;
+  background-color: var(--color-pure-white);
+  height: 100%;
+  min-height: 380px;
+  /* The signature SIM card shape: clipped top-left corner */
+  clip-path: polygon(32px 0, 100% 0, 100% 100%, 0 100%, 0 32px);
+  border-radius: 12px;
+  /* Thick dark border simulation inside the clipped shape */
+  box-shadow: inset 0 0 0 1px var(--color-stone-border);
+  overflow: hidden;
+  text-align: center;
+}
+
+/* The Gold Chip */
+.sim-chip {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 36px;
+  height: 28px;
+  background: linear-gradient(135deg, #f0d571 0%, #e0ad24 50%, #f0d571 100%);
+  border-radius: 4px;
+  border: 1px solid #b38510;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 4px;
+  opacity: 0.9;
+}
+
+.sim-chip-line {
+  height: 1px;
+  background-color: #b38510;
+  width: 100%;
+}

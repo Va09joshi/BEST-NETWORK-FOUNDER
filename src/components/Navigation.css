@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: var(--color-pure-white);
+  border-bottom: 1px solid var(--color-stone-border);
+  border-radius: 0;
+  padding: 16px 0;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  color: var(--color-ink-black);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 18px;
+  letter-spacing: -0.5px;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  color: var(--color-warm-gray);
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: none;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--color-cyan-signal);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav-center {
+    display: none;
+  }
+}

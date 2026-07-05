@@ -1,0 +1,83 @@
+.hero {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding-top: 120px; /* Accounts for nav */
+  padding-bottom: 80px;
+}
+
+/* Green and Blue Gradient Ambient Background */
+.hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+  opacity: 0.5;
+  animation: float 20s infinite ease-in-out alternate;
+}
+
+.hero::before {
+  top: -10%;
+  left: 0%;
+  width: 800px;
+  height: 800px;
+  background: rgba(59, 166, 241, 0.4); /* Blue */
+}
+
+.hero::after {
+  bottom: 10%;
+  right: 0%;
+  width: 700px;
+  height: 700px;
+  background: rgba(34, 197, 94, 0.3); /* Green */
+  animation-delay: -5s;
+}
+
+.hero-search-wrapper {
+  background: var(--color-pure-white);
+  border: 1px solid var(--color-stone-border);
+  box-shadow: var(--shadow-sm);
+  border-radius: 8px; 
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  transition: border-color 0.3s ease;
+}
+
+.hero-search-wrapper:focus-within {
+  border-color: var(--color-cyan-signal);
+}
+
+.hero-search-input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  font-size: 15px;
+  outline: none;
+  color: var(--color-ink-black);
+  padding: 0 12px;
+  font-family: inherit;
+}
+
+.hero-search-input::placeholder {
+  color: var(--color-ash-gray);
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+  color: var(--color-cyan-signal);
+  font-weight: 300;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
