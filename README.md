@@ -15,7 +15,9 @@
 
 ## 🌟 About The Project
 
-![Dashboard Screenshot](./public/dashboard-screenshot.png)
+<div align="center">
+  <img src="./public/ss-1.png" alt="Dashboard Screenshot" width="800" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); margin-bottom: 24px;">
+</div>
 
 Finding the right mobile network shouldn't rely on biased marketing or overly complex technical tools. **Best SIM** is a minimalistic, beautifully designed web application that helps you discover the most reliable mobile operator in your specific city, town, or village. 
 
@@ -44,12 +46,16 @@ Think of it as **Speedtest.net**, but highly localized, visually immersive, and 
 ## 📸 Screenshots
 
 ### Map Interface
-![Map Overlay](./public/dashboard-screenshot.png)
-*The interactive GIS Pro dashboard showing tower heatmaps.*
+<div align="center">
+  <img src="./public/ss-2.png" alt="Map Overlay" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 12px;">
+</div>
+*The interactive GIS Pro dashboard showing tower heatmaps and signal analysis.*
 
 ### Recommendation Insights
-![Comparison](./public/comparison-final.png)
-*Detailed breakdown of operator reliability and scores.*
+<div align="center">
+  <img src="./public/comparison-final.png" alt="Comparison" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 12px;">
+</div>
+*Detailed breakdown of operator reliability, coverage, and community scores.*
 
 ---
 
@@ -65,22 +71,22 @@ To get a local copy up and running, follow these simple steps.
 ### Installation
 
 1. Clone the repo
-   ```sh
+   ```bash
    git clone https://github.com/Va09joshi/BEST-NETWORK-FOUNDER.git
    ```
 2. Navigate to the project directory
-   ```sh
+   ```bash
    cd BEST-NETWORK-FOUNDER
    ```
 3. Install dependencies
-   ```sh
+   ```bash
    npm install
    ```
 4. Start the development server
-   ```sh
+   ```bash
    npm run dev
    ```
-5. Open `http://localhost:3000` in your browser.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
