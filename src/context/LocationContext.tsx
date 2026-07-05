@@ -25,6 +25,7 @@ interface RecommendationData {
   avgUpload: number;
   latency: number;
   towers: Tower[];
+  allOperators?: any[];
 }
 
 interface LocationContextType {
