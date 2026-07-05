@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/image copy 2.png" alt="Best-NET Logo" width="200">
+  <img src="./public/logo.png" alt="Best-NET Logo" width="200">
   <h3 align="center">Best SIM Network Analyzer</h3>
   <p align="center">
     <strong>Real-time geospatial intelligence to find the best mobile network in your area.</strong>
@@ -15,7 +15,7 @@
 
 ## 🌟 About The Project
 
-![Dashboard Screenshot](./public/image.png)
+![Dashboard Screenshot](./public/dashboard-screenshot.png)
 
 Finding the right mobile network shouldn't rely on biased marketing or overly complex technical tools. **Best SIM** is a minimalistic, beautifully designed web application that helps you discover the most reliable mobile operator in your specific city, town, or village. 
 
@@ -44,11 +44,11 @@ Think of it as **Speedtest.net**, but highly localized, visually immersive, and 
 ## 📸 Screenshots
 
 ### Map Interface
-![Map Overlay](./public/image.png)
+![Map Overlay](./public/dashboard-screenshot.png)
 *The interactive GIS Pro dashboard showing tower heatmaps.*
 
 ### Recommendation Insights
-![Comparison](./public/image%20copy.png)
+![Comparison](./public/comparison-screenshot.png)
 *Detailed breakdown of operator reliability and scores.*
 
 ---
