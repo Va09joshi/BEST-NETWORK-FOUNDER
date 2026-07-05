@@ -153,7 +153,7 @@ export default function SpeedRankingData() {
                 <th style={{ padding: '16px 24px', textAlign: 'right', fontSize: '12px', fontWeight: '700', color: '#475569', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Jitter (ms)</th>
               </tr>
             </thead>
-            <tbody style={{ divideY: '1px solid #e2e8f0' }}>
+            <tbody style={{ borderTop: '1px solid #e2e8f0' }}>
               {rankings.map((row, index) => {
                 const isWinner = index === 0;
                 return (
