@@ -13,6 +13,37 @@
 
 ---
 
+<details>
+  <summary><strong>Table of Contents</strong> (Click to expand)</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#key-features">Key Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#built-with">Built With</a></li>
+    <li>
+      <a href="#screenshots">Screenshots</a>
+      <ul>
+        <li><a href="#map-interface">Map Interface</a></li>
+        <li><a href="#recommendation-insights">Recommendation Insights</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
+
+---
+
 ## About The Project
 
 <div align="center">
