@@ -30,32 +30,25 @@ export default function AnalyticsPage() {
       <div style={{ flex: 1, position: 'relative' }}>
         
         {/* Top Floating Control Bar */}
-        <div style={{ position: 'absolute', top: '24px', left: '24px', right: '24px', zIndex: 1000, display: activeLayer === 'speed_ranking' ? 'none' : 'flex', justifyContent: 'space-between', alignItems: 'flex-start', pointerEvents: 'none' }}>
+        <div 
+          className={`absolute top-16 md:top-6 left-4 right-4 md:left-6 md:right-6 z-[1000] flex-col md:flex-row justify-between items-start pointer-events-none gap-4 ${activeLayer === 'speed_ranking' ? 'hidden' : 'flex'}`}
+        >
           
-          <div style={{ pointerEvents: 'auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <div style={{ backgroundColor: 'var(--color-pure-white)', padding: '16px 24px', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.1)', border: '1px solid var(--color-stone-border)' }}>
-              <h1 style={{ fontSize: '24px', fontWeight: '700', color: 'var(--color-ink-black)', marginBottom: '4px' }}>
+          <div className="pointer-events-auto flex flex-col gap-4 w-full md:w-auto">
+            <div className="bg-white p-4 md:p-6 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.1)] border border-gray-200">
+              <h1 className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
                 {activeLayer.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
               </h1>
-              <div style={{ fontSize: '14px', color: 'var(--color-ash-gray)' }}>
+              <div className="text-xs md:text-sm text-gray-500">
                 Real-time geospatial intelligence for {location ? location.placeName : 'India (National View)'}
               </div>
             </div>
 
             {/* Winner Announcement Box */}
             {activeLayer === 'best_sim' && recommendation && location && (
-              <div style={{ 
-                backgroundColor: 'rgba(255, 255, 255, 0.95)', 
-                backdropFilter: 'blur(12px)',
-                padding: '20px 24px', 
-                borderRadius: '12px', 
-                boxShadow: '0 12px 32px rgba(0,0,0,0.12)', 
-                border: '2px solid var(--color-cyan-signal)',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '16px',
-                animation: 'slideIn 0.5s ease-out'
-              }}>
+              <div 
+                className="bg-white/95 backdrop-blur-md p-4 md:p-5 rounded-xl shadow-[0_12px_32px_rgba(0,0,0,0.12)] border-2 border-cyan-500 flex items-center gap-4 animate-[slideIn_0.5s_ease-out] w-full md:w-auto"
+              >
                 {/* Mini Realistic SIM Card */}
                 <div style={{ 
                   width: '36px', 

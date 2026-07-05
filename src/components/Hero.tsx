@@ -208,27 +208,16 @@ export default function Hero() {
 
       <div className="container" style={{ maxWidth: '1000px', position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
         
-        <h1 className="mb-4" style={{ fontSize: '72px', lineHeight: '1.1', letterSpacing: '-2px', fontWeight: '500', color: 'var(--color-ink-black)', fontFamily: 'var(--font-roobert)', textAlign: 'center' }}>
+        <h1 className="mb-4 text-5xl md:text-[72px] font-medium text-gray-900 text-center leading-[1.1] tracking-[-2px]" style={{ fontFamily: 'var(--font-roobert)' }}>
           Find the <br />
-          <span style={{ color: 'var(--color-cyan-signal)' }}>Best Mobile Network</span><br /> 
+          <span className="text-cyan-500">Best Mobile Network</span><br /> 
           for your area
         </h1>
-        <p className="text-warm mb-8" style={{ fontSize: '22px', maxWidth: '750px', margin: '24px auto 48px auto', lineHeight: '1.6', textAlign: 'center' }}>
+        <p className="text-gray-600 mb-8 text-lg md:text-[22px] max-w-[750px] mx-auto mt-6 md:mb-12 leading-relaxed text-center px-4">
           Compare Jio, Airtel, Vi and BSNL using real performance data, nearby tower locations, and authentic community reports.
         </p>
 
-        <div className="hero-search-wrapper" style={{
-          display: 'flex',
-          alignItems: 'center',
-          width: '100%',
-          maxWidth: '800px',
-          margin: '0 auto',
-          backgroundColor: 'var(--color-pure-white)',
-          padding: '12px 12px 12px 32px',
-          borderRadius: '12px',
-          boxShadow: '0 8px 32px rgba(0, 0, 0, 0.04)',
-          border: '1px solid var(--color-stone-border)'
-        }}>
+        <div className="flex flex-col md:flex-row items-center w-full max-w-[800px] mx-auto bg-white p-2 md:p-3 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.04)] border border-gray-200 gap-3 md:gap-0 px-4 md:px-3 md:pl-8">
           <Search size={32} className="text-cyan" />
           <div style={{ position: 'relative', width: '100%' }}>
             <input
@@ -246,15 +235,7 @@ export default function Hero() {
               }}
               onFocus={() => { if (results.length > 0) setShowDropdown(true); }}
               onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
-              style={{
-                fontSize: '22px',
-                border: 'none',
-                outline: 'none',
-                background: 'transparent',
-                padding: '0 24px',
-                color: 'var(--color-ink-black)',
-                width: '100%'
-              }}
+              className="w-full text-lg md:text-[22px] border-none outline-none bg-transparent px-2 md:px-6 text-gray-900 py-3 md:py-0 text-center md:text-left"
             />
 
             {/* Search Results Dropdown */}
@@ -301,15 +282,14 @@ export default function Hero() {
             )}
           </div>
           
-          <button className="btn-primary" style={{ padding: '20px 36px', fontSize: '20px', borderRadius: '8px', fontWeight: '600' }} onClick={handleSearchSubmit}>Search</button>
+          <button className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 md:py-5 text-lg md:text-xl rounded-xl font-semibold transition-colors" onClick={handleSearchSubmit}>Search</button>
         </div>
 
-        <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', gap: '16px' }}>
+        <div className="mt-8 flex flex-col md:flex-row justify-center gap-4 w-full px-4 md:px-0">
           <button 
             onClick={handleUseCurrentLocation}
-            className="btn-ghost" 
             disabled={isLocating}
-            style={{ backgroundColor: 'var(--color-pure-white)', display: 'flex', alignItems: 'center', gap: '8px', padding: '12px 24px', fontSize: '16px', borderRadius: '8px', cursor: isLocating ? 'not-allowed' : 'pointer', opacity: isLocating ? 0.7 : 1 }}
+            className={`flex items-center justify-center gap-2 px-6 py-4 bg-white text-gray-700 text-base rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors w-full md:w-auto ${isLocating ? 'opacity-70 cursor-not-allowed' : 'cursor-pointer'}`}
           >
             {isLocating ? (
               <>
@@ -319,13 +299,13 @@ export default function Hero() {
               </>
             ) : (
               <>
-                <MapPin size={18} className="text-cyan" />
+                <MapPin size={18} className="text-cyan-500" />
                 Use current location
               </>
             )}
           </button>
           
-          <button onClick={() => router.push('/analytics')} className="btn-ghost" style={{ backgroundColor: '#f0fdf4', color: '#166534', border: '1px solid #bbf7d0', display: 'flex', alignItems: 'center', gap: '8px', padding: '12px 24px', fontSize: '16px', borderRadius: '8px' }}>
+          <button onClick={() => router.push('/analytics')} className="flex items-center justify-center gap-2 px-6 py-4 bg-green-50 text-green-800 border border-green-200 hover:bg-green-100 transition-colors text-base rounded-xl w-full md:w-auto">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
             Launch GIS Pro Dashboard
           </button>

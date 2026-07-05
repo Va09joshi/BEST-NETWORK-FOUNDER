@@ -1,28 +1,24 @@
 import React from 'react';
+import { useLocation } from '@/context/LocationContext';
 
 export default function FoundersLetter() {
+  const { location } = useLocation();
+  const locationName = location?.placeName ? location.placeName.split(',')[0] : '🇮🇳 India';
+
   return (
-    <section className="section" style={{ backgroundColor: 'var(--color-stone-canvas)', padding: '140px 20px' }}>
-      <div className="container" style={{ display: 'flex', justifyContent: 'center' }}>
+    <section className="section bg-[#f8fafc] py-16 md:py-32 px-4 md:px-5">
+      <div className="container flex justify-center mx-auto">
 
-        <div className="card" style={{
-          maxWidth: '700px',
-          width: '100%',
-          padding: '48px 56px',
-          backgroundColor: 'var(--color-pure-white)',
-          textAlign: 'left',
-          border: '1px solid var(--color-stone-border)',
-          boxShadow: 'var(--shadow-xl)'
-        }}>
+        <div className="card w-full max-w-[700px] p-8 md:p-14 bg-white text-left border border-gray-200 shadow-xl rounded-2xl">
 
-          <h3 style={{ fontSize: '18px', fontWeight: '600', color: 'var(--color-ink-black)', marginBottom: '8px' }}>
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">
             Greetings to you,
           </h3>
-          <p className="text-warm" style={{ fontSize: '18px', marginBottom: '32px' }}>
-            wanderer from 🇮🇳 India.
+          <p className="text-gray-600 text-lg mb-8">
+            wanderer from {locationName}.
           </p>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', color: 'var(--color-warm-gray)', fontSize: '16px', lineHeight: '1.7' }}>
+          <div className="flex flex-col gap-5 text-gray-600 text-base leading-relaxed">
             <p>
               Every mobile user should have access to transparent network data. It's essential.
             </p>
@@ -30,27 +26,27 @@ export default function FoundersLetter() {
               But it's not always easy to find the truth. For us, it was either relying on biased marketing, or using overly complex technical tools. That's why we've cherry-picked the most important performance metrics and carefully crafted them into <strong>one minimalistic tool</strong>, Best SIM.
             </p>
             <p>
-              Think of <strong style={{ color: 'var(--color-ink-black)' }}>Speedtest.net</strong>, but actually localized and actionable.<br />
+              Think of <strong className="text-gray-900">Speedtest.net</strong>, but actually localized and actionable.<br />
               A tool you'll actually use before buying your next SIM card.
             </p>
             <p>
-              If you're interested in trying out our platform but not sure where to start, feel free to explore the interactive map or reach out to us via <a href="#" style={{ color: 'var(--color-cyan-signal)', textDecoration: 'none' }}>twitter</a> or <a href="#" style={{ color: 'var(--color-cyan-signal)', textDecoration: 'none' }}>email</a>.
+              If you're interested in trying out our platform but not sure where to start, feel free to explore the interactive map or reach out to us via <a href="#" className="text-cyan-500 no-underline hover:underline">twitter</a> or <a href="#" className="text-cyan-500 no-underline hover:underline">email</a>.
             </p>
             <p>
               Looking forward to having you on board!
             </p>
           </div>
 
-          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--color-stone-border)' }}>
-            <p className="text-warm mb-2" style={{ fontSize: '16px' }}>Gratefully,</p>
+          <div className="mt-12 pt-8 border-t border-gray-200">
+            <p className="text-gray-600 mb-2 text-base">Gratefully,</p>
 
             {/* Signature Simulation */}
-            <div style={{ fontSize: '36px', fontFamily: '"Caveat", "Dancing Script", cursive', color: 'var(--color-ink-black)', marginBottom: '24px', letterSpacing: '-1px' }}>
-              The Team <span style={{ fontSize: '20px', fontFamily: 'var(--font-inter)', color: 'var(--color-warm-gray)', marginLeft: '8px' }}>from Best SIM</span>
+            <div className="text-3xl md:text-4xl text-gray-900 mb-6 tracking-tight" style={{ fontFamily: '"Caveat", "Dancing Script", cursive' }}>
+              The Team <span className="text-lg md:text-xl text-gray-500 ml-2" style={{ fontFamily: 'var(--font-inter)' }}>from Best SIM</span>
             </div>
 
-            <p className="text-ash-gray" style={{ fontSize: '14px' }}>
-              P.S. Best SIM is completely <span style={{ color: 'var(--color-cyan-signal)' }}>free</span> to use.
+            <p className="text-gray-400 text-sm">
+              P.S. Best SIM is completely <span className="text-cyan-500">free</span> to use.
             </p>
           </div>
 

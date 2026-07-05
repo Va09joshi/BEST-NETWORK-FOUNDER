@@ -18,7 +18,7 @@ export default function ComparisonCards() {
           <p className="text-warm text-subheading">Side-by-side performance in your area.</p>
         </div>
         
-        <div style={{ marginTop: '64px', backgroundColor: 'var(--color-pure-white)', borderRadius: '16px', border: '1px solid var(--color-stone-border)', boxShadow: '0 4px 24px rgba(0,0,0,0.04)', overflow: 'hidden' }}>
+        <div style={{ marginTop: '64px', backgroundColor: 'var(--color-pure-white)', borderRadius: '16px', border: '1px solid var(--color-stone-border)', boxShadow: '0 4px 24px rgba(0,0,0,0.04)', overflowX: 'auto' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'center' }}>
             <thead>
               <tr>

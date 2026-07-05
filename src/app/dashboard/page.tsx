@@ -41,21 +41,19 @@ function DashboardContent() {
   }, [locationId]);
 
   return (
-    <main style={{ minHeight: '100vh', padding: '100px 24px 60px 24px', backgroundColor: 'var(--color-stone-canvas)' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+    <main className="min-h-screen pt-24 pb-16 px-4 md:px-6 bg-[#f8fafc]" style={{ backgroundColor: 'var(--color-stone-canvas)' }}>
+      <div className="max-w-[1200px] mx-auto">
           <div style={{ marginBottom: '48px', textAlign: 'center' }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', backgroundColor: 'var(--color-pure-white)', borderRadius: '24px', border: '1px solid var(--color-stone-border)', fontSize: '14px', fontWeight: '500', color: 'var(--color-ink-black)', marginBottom: '16px' }}>
               📍 {data?.location?.city || 'Dewas'}, {data?.location?.state || 'Madhya Pradesh'}
             </div>
-            <h1 className="text-ink mb-4" style={{ 
-              fontSize: '48px', 
+            <h1 className="text-4xl md:text-5xl font-semibold mb-4 text-gray-900" style={{ 
               fontFamily: 'var(--font-roobert)', 
-              fontWeight: '600',
               letterSpacing: '-1px'
             }}>
               Location <span style={{ color: 'var(--color-cyan-signal)' }}>Intelligence</span>
             </h1>
-            <p className="text-warm" style={{ fontSize: '18px', maxWidth: '600px', margin: '0 auto' }}>
+            <p className="text-lg text-gray-600 max-w-[600px] mx-auto">
               Comprehensive AI-driven analysis of mobile network performance, tower density, and community reports in your area.
             </p>
           </div>
@@ -72,12 +70,7 @@ function DashboardContent() {
             <div>
               <QuickStats data={data} />
               
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: '3fr 2fr',
-                gap: '24px',
-                marginBottom: '48px'
-              }}>
+              <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-6 mb-12">
                 <TowerMap location={data?.location} towers={data?.towers} />
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                   <NetworkLeaderboard scores={data?.scores} />
