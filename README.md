@@ -16,7 +16,7 @@
 ## 🌟 About The Project
 
 <div align="center">
-  <img src="./public/ss-1.png" alt="Dashboard Screenshot" width="800" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); margin-bottom: 24px;">
+  <img src="./public/dashboard-screenshot.png" alt="Dashboard Screenshot" width="800" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); margin-bottom: 24px;">
 </div>
 
 Finding the right mobile network shouldn't rely on biased marketing or overly complex technical tools. **Best SIM** is a minimalistic, beautifully designed web application that helps you discover the most reliable mobile operator in your specific city, town, or village. 
