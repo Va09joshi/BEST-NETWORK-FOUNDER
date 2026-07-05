@@ -223,20 +223,20 @@ export default function GISMap({ layerType }: GISMapProps) {
         {location && <MapUpdater center={[location.latitude, location.longitude]} />}
         
         {/* Render specific overlay layers based on active tab */}
-        {layerType === 'dead_zones' && renderDeadZones()}
-        {layerType === 'smart_tower' && renderSmartTowers()}
+        {(layerType as string) === 'dead_zones' && renderDeadZones()}
+        {(layerType as string) === 'smart_tower' && renderSmartTowers()}
         {(layerType as string) === 'roads' && renderRoads()}
-        {layerType === 'emergency' && renderEmergency()}
-        {layerType === 'villages' && renderVillages()}
-        {layerType === 'live_heatmap' && renderLiveHeatmap()}
-        {layerType === 'weather_impact' && renderWeatherImpact()}
-        {layerType === 'speed_ranking' && renderSpeedRanking()}
-        {layerType === '5g_readiness' && render5GReadiness()}
-        {layerType === 'digital_divide' && renderDigitalDivide()}
-        {layerType === 'tower_gaps' && renderTowerGaps()}
+        {(layerType as string) === 'emergency' && renderEmergency()}
+        {(layerType as string) === 'villages' && renderVillages()}
+        {(layerType as string) === 'live_heatmap' && renderLiveHeatmap()}
+        {(layerType as string) === 'weather_impact' && renderWeatherImpact()}
+        {(layerType as string) === 'speed_ranking' && renderSpeedRanking()}
+        {(layerType as string) === '5g_readiness' && render5GReadiness()}
+        {(layerType as string) === 'digital_divide' && renderDigitalDivide()}
+        {(layerType as string) === 'tower_gaps' && renderTowerGaps()}
         
         {/* Render base towers if in Best SIM mode */}
-        {layerType === 'best_sim' && geoData?.realTowers && (
+        {(layerType as string) === 'best_sim' && geoData?.realTowers && (
           geoData.realTowers.map((tower: any, idx: number) => {
             const getProviderColor = (p: string) => {
               if (p.includes('Airtel')) return '#ef4444';
